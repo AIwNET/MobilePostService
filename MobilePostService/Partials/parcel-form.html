@@ -1,0 +1,34 @@
+﻿<form ng-submit="submit()">
+  <table>      
+    <tr>
+      <td>Nazwa</td>
+      <td colspan=2><input type="text" ng-model="parcel.Name" /></td>
+    </tr>
+    <tr>
+      <td>Miasto</td>
+      <td colspan=2><input type="text" ng-model="parcel.City" /></td>
+    </tr>
+    <tr>
+      <td>Ulica</td>
+      <td colspan=2><input type="text" ng-model="parcel.Street" /></td>
+    </tr>
+    <tr>
+      <td>Kod pocztowy</td>
+      <td colspan=2><input type="text" ng-model="parcel.PostalCode" /></td>
+    </tr>
+    <tr>
+      <td>Telefon</td>
+      <td colspan=2><input type="text" ng-model="parcel.Phone" /></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td colspan=2><input type="text" ng-model="parcel.Email" /></td>
+    </tr>
+    <tr><td height=5></td></tr>
+    <tr>
+      <td></td>
+      <td align="right"><input type="submit" id="submit" value="Zapisz" /></td> 
+      <td align="right"><input type="button" value="Anuluj" ng-redirect-to="#" /></td>
+    </tr>
+  </table>
+</form>

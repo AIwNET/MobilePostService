@@ -1,0 +1,13 @@
+﻿@if (Request.IsAuthenticated) {
+    <text>
+        Jesteś zalogowany jako, @User.Identity.Name
+        @using (Html.BeginForm("LogOff", "Administrator", FormMethod.Post, new { id = "logoutForm" })) {
+            @Html.AntiForgeryToken()
+            <a href="javascript:document.getElementById('logoutForm').submit()">Wyloguj</a>
+        }
+    </text>
+} else {
+    <ul>
+        <li>@Html.ActionLink("Zaloguj", "Login", "Administrator", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}

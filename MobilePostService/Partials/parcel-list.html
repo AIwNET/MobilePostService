@@ -1,0 +1,22 @@
+﻿<table border=1>
+  <tr>
+      <th>Nazwa</th>
+      <th>Miasto</th>
+      <th>Ulica</th>
+      <th>Kod pocztowy</th>
+      <th>Telefon</th>
+      <th>Email</th>
+      <th>Data rejestracji</th>
+  </tr>
+  <tr ng-repeat="parcel in parcels">
+    <td>{{parcel.Name}}</td>
+    <td>{{parcel.City}}</td>
+    <td>{{parcel.Street}}</td>
+    <td>{{parcel.PostalCode}}</td>
+    <td>{{parcel.Phone}}</td>
+    <td>{{parcel.Email}}</td>
+    <td>{{parcel.RegistrationDate}}</td>
+    </tr>
+</table>
+<br/>
+<input type="button" ng-redirect-to="#new" value="Nowa paczka" />

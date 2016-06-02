@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Message</h1>
+            </hgroup>
+        </div>
+    </section>
+}
+<h2>Wybierz opcję:</h2>
+<p>
+    <a href="/Parcel/Add">Zgłoś paczkę</a>
+</p>
+<p>
+    <a href="/Parcel/List">Lista zgłoszeń</a>
+</p>
+<p>
+    <a href="/Account/Register">Zarejestruj kuriera</a>
+</p>
